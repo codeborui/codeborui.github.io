@@ -1,0 +1,8 @@
+title: Codeborui.GitHub.io
+description: 暖暖的小窝窝
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
