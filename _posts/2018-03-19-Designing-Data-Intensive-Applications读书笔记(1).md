@@ -16,4 +16,4 @@ author: Borui
 > 1.数据库<br/>2.缓存<br/>3.索引<br/>4.流处理<br/>5.批处理
 
 ![Figure 1-1. One possible architecture for a data system that combines several
-components.](https://raw.githubusercontent.com/codeborui/codeborui.github.io/master/favicon.ico/img/1.JPG)
+components.](https://github.com/codeborui/codeborui.github.io/blob/master/img/1.JPG)

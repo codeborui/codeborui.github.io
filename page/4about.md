@@ -26,7 +26,7 @@ type: page
 
 ## 联系我
 
-* GitHub：[Borui](http://codeborui.github.io/)
+* GitHub：[Borui](https://github.com/codeborui)
 * Email：dagongzhimeng@163.com
 
 ## 关于本站
