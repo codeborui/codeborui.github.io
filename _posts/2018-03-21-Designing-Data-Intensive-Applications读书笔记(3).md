@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Designing Data-Intensive Applications读书笔记(3)(编写中...)"
+title:  "Designing Data-Intensive Applications读书笔记(3)(编写中..)"
 categories: DDIA
 tags:  读书笔记 分布式
 author: Borui
