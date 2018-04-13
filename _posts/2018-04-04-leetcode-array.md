@@ -30,3 +30,6 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 此时，不如考虑对数组进行排序，排序的复杂度也就是O(nlog n)。然后固定第一个数，通过首尾指针就可以查找剩下两个数。
 
 编程时，考虑重复的数需要有效地跳过。
+
+# [3sum closest](https://leetcode-cn.com/problems/3sum-closest/description/)
+这道题和上一道题基本思路一致，但是编写上需要细心
