@@ -33,3 +33,19 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 
 # [3sum closest](https://leetcode-cn.com/problems/3sum-closest/description/)
 这道题和上一道题基本思路一致，但是编写上需要细心
+
+# [search a 2d matrix](https://leetcode-cn.com/problems/search-a-2d-matrix/description/)
+这道题目的核心在于，如何使得我们每次**选择查询的方向是唯一**的。
+
+注意数组的特性，从左到右是有序的，从上到下是有序的，而且每行第一个数大于上一行最后一个数，也就是说每行的数都大于上一行的所有数。当前数小于目标时，可以往左走，也可以往上走。而当前数大于目标时，可以往右走，也可以往下走。
+
+根据我们唯一方向的分析，可以组合出两种策略：
+1. 当前数小于目标时，往左走；前数大于目标时，往下走。这时我们的最初位置就是右上角。
+2. 当前数小于目标时，往上走；前数大于目标时，往右走。这时我们的最初位置就是左下角。
+
+以上。
+
+# [find minimum in rotated sorted array](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/description/)
+首先，还是观察数组的特征：有序，无重复，旋转后的右侧小于左侧值。
+
+针对这种有序无重复的数组，我们一般会先考虑二分法。由于我们的目标是寻找最小值，因此我们需要不断寻找最小值的范围。最小值
