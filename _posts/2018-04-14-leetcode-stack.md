@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "leetcode数组相关"
+title:  "leetcode栈相关"
 categories: 算法
 tags:  leetcode 数组
 author: Borui

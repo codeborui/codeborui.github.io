@@ -48,4 +48,20 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 # [find minimum in rotated sorted array](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/description/)
 首先，还是观察数组的特征：有序，无重复，旋转后的右侧小于左侧值。
 
-针对这种有序无重复的数组，我们一般会先考虑二分法。由于我们的目标是寻找最小值，因此我们需要不断寻找最小值的范围。最小值
+针对这种有序无重复的数组，我们一般会先考虑二分法。由于我们的目标是寻找最小值，因此我们需要不断寻找最小值的范围。这里mid我们向下取整，因此当只有两个数时，中间值将是left的值，我们可以单独考虑两个数的情况，如下只考虑大于等于三个数时的情况：
+1. mid大于left值，并且mid大于right值，则情况如下：4,5,6,7,0,1,2,3。目标在右侧。
+2. mid大于left值，并且mid小于right值，则情况如下：0,1,2,3,4,5,6,7。目标在左侧。
+3. mid小于left值，并且mid小于right值，则情况如下：5,6,7,0,1,2,3,4。目标在左侧。
+4. mid小于left值，并且mid大于right值，这种情况不可能，mid小于left说明mid处于翻转后的右半侧，右半侧是有序的，mid只可能小于right。
+
+综上，当mid值小于right值，目标在左半侧。当mid大于left值时，目标在右半侧。
+
+#[find minimum in rotated sorted array ii](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/description/)
+这里存在重复的数据了，不过上述的分析还是有效的，但是关于mid与left，right相等的情况，就需要特别考虑了。
+
+当mid=left=right的时候，这个时候最小值可能在任何一个区间里，如1,1,1,0,1或者1,0,1,1,1，因此只能去顺序遍历了。
+1. mid等于left值，并且mid大于right值，则情况如下：3,3,0,1。目标在右侧。
+2. mid等于left值，并且mid小于right值，则情况如下：0,0,0,1。目标在左侧。
+3. mid等于right值，并且mid大于left值，则情况如下：0,1,1,1。目标在左侧。
+4. mid等于right值，并且mid小于left值，则情况如下：2,0,1,1。目标在左侧。
+
