@@ -2,7 +2,7 @@
 layout: post
 title:  "leetcode栈相关"
 categories: 算法
-tags:  leetcode 数组
+tags:  leetcode 栈
 author: Borui
 ---
 

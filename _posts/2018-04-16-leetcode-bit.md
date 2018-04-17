@@ -2,7 +2,7 @@
 layout: post
 title:  "leetcode位运算相关"
 categories: 算法
-tags:  leetcode 数组
+tags:  leetcode 位运算
 author: Borui
 ---
 
