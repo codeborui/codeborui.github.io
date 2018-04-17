@@ -9,6 +9,8 @@ author: Borui
 * content
 {:toc}
 
+数组最常用的技巧就是首尾双指针，二分和hash表。
+
 # [Two sum](https://leetcode-cn.com/problems/two-sum/description/)
 一般对于无序的数组问题,都需要考虑空间换取时间.
 
