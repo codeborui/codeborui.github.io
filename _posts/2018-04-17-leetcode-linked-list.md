@@ -20,3 +20,9 @@ author: Borui
 
 # [reverse linked list ii](https://leetcode-cn.com/problems/reverse-linked-list-ii/description/)
 基本思路和上一题类似，只不过我们需要先遍历到m的位置，然后翻转m到n之间的节点，然后再把n之后的节点连接上。
+
+# [merge two sorted lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/description/)
+常规的归并排序。
+
+#[merge k sorted lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/description/)
+利用上一题的合并两个链表的方法merge(l1,l2),递归合并merge(l1,list[1:])
