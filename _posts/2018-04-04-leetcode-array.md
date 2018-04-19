@@ -67,4 +67,12 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 3. mid等于right值，并且mid大于left值，则情况如下：0,1,1,1。目标在左侧。
 4. mid等于right值，并且mid小于left值，则情况如下：2,0,1,1。目标在左侧。
 
-#[spiral-matrix](https://leetcode-cn.com/problems/spiral-matrix/description/)
+# [spiral-matrix](https://leetcode-cn.com/problems/spiral-matrix/description/)
+这道题没有算法难度，但是存在编程难度。
+
+比较精妙的解法是，分别用四个变量来限定边界，然后通过螺旋访问顺序，依次变化边界。
+
+比较通用的方法，就是利用方向数组。
+
+# [spiral matrix ii](https://leetcode-cn.com/problems/spiral-matrix-ii/description/)
+和上面的思路一致，通过螺旋访问数组然后赋值。
