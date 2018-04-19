@@ -58,7 +58,7 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 
 综上，当mid值小于right值，目标在左半侧。当mid大于left值时，目标在右半侧。
 
-#[find minimum in rotated sorted array ii](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/description/)
+# [find minimum in rotated sorted array ii](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/description/)
 这里存在重复的数据了，不过上述的分析还是有效的，但是关于mid与left，right相等的情况，就需要特别考虑了。
 
 当mid=left=right的时候，这个时候最小值可能在任何一个区间里，如1,1,1,0,1或者1,0,1,1,1，因此只能去顺序遍历了。
@@ -67,3 +67,4 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 3. mid等于right值，并且mid大于left值，则情况如下：0,1,1,1。目标在左侧。
 4. mid等于right值，并且mid小于left值，则情况如下：2,0,1,1。目标在左侧。
 
+#[spiral-matrix](https://leetcode-cn.com/problems/spiral-matrix/description/)
