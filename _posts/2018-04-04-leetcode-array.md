@@ -36,6 +36,15 @@ x*y=n,当x不断变小时,y值的变化趋向向将直接影响n的变化趋向.
 # [3sum closest](https://leetcode-cn.com/problems/3sum-closest/description/)
 这道题和上一道题基本思路一致，但是编写上需要细心
 
+# [4sum](https://leetcode-cn.com/problems/4sum/description/)
+k sum问题一般解法就是先排序，然后k-2层循环+首尾指针
+
+# [remove duplicates from sorted array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/description/)
+由于是有序的队列，因此直接往前覆盖就行。但是需要注意边界条件
+
+# [remove element](https://leetcode-cn.com/problems/remove-element/description/)
+简单的进行覆盖就好
+
 # [search a 2d matrix](https://leetcode-cn.com/problems/search-a-2d-matrix/description/)
 这道题目的核心在于，如何使得我们每次**选择查询的方向是唯一**的。
 
