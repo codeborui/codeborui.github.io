@@ -76,6 +76,18 @@ k sum问题一般解法就是先排序，然后k-2层循环+首尾指针
 3. mid等于right值，并且mid大于left值，则情况如下：0,1,1,1。目标在左侧。
 4. mid等于right值，并且mid小于left值，则情况如下：2,0,1,1。目标在左侧。
 
+# [search in rotated sorted array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/description/)
+解题报告参考[搜索旋转排序数组
+](https://blog.csdn.net/guoziqing506/article/details/51139999)
+核心在于，先确定有序区间，然后再做查找判断，对于无法判断是否有序的区间则进行递归查找。
+
+错误1：判断左有序还是右有序的时候，需要>=或者<=，因为mid和left相等或者mid和right相等的时候，也就是说只有一个或者两个元素的时候，左有序或者右有序都是成立的。
+
+# [search for a range](https://leetcode-cn.com/problems/search-for-a-range/description/)
+由于要求时间复杂度为O(log n)，因此可以通过二分分别查找元素的第一次出现和最后一次出现。
+
+查找元素的第一次出现和最后一次出现，编写的核心在于二分时，保证left或者right始终向我们要查找的位置逼近。比如查找第一次出现的位置时，当mid<target，那么left值需要更新到mid+1，这时的left才会时刻往第一次出现的target靠近。查找最后一次出现位置时，需要当mid>target，right值更新到mid-1。
+
 # [spiral-matrix](https://leetcode-cn.com/problems/spiral-matrix/description/)
 这道题没有算法难度，但是存在编程难度。
 
