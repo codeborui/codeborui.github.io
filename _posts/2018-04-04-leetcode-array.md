@@ -88,6 +88,9 @@ k sum问题一般解法就是先排序，然后k-2层循环+首尾指针
 
 查找元素的第一次出现和最后一次出现，编写的核心在于二分时，保证left或者right始终向我们要查找的位置逼近。比如查找第一次出现的位置时，当mid<target，那么left值需要更新到mid+1，这时的left才会时刻往第一次出现的target靠近。查找最后一次出现位置时，需要当mid>target，right值更新到mid-1。
 
+# [search insert position](https://leetcode-cn.com/problems/search-insert-position/description/)
+二分查找的变种。核心在于找到不变性条件是什么。
+
 # [spiral-matrix](https://leetcode-cn.com/problems/spiral-matrix/description/)
 这道题没有算法难度，但是存在编程难度。
 
